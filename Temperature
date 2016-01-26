@@ -1,0 +1,17 @@
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+    int temp, cel=0;
+    
+    std::cout << "Este programa convertirá la temperatura de grados Fahrenheit\n";
+    
+    std::cout << "Ingresa la temperatura en grados Fahrenheit\n";
+    std::cin >> temp;
+    
+    cel=5*(temp-32)/9;
+    std::cout << "La temperatura en Celcius es de " <<  cel  << "\n";
+    
+
+    return 0;
+}
