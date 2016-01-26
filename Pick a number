@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+  
+    int numero1=44, numero2;
+    std::cout << "En este programa adivinarás el número que tengo pensado, con un rango de 1-100\n";
+    int cont=0;
+    
+    do{
+        
+        std::cout << "Ingresa el número que crees:\n";
+        std::cin >> numero2;
+        
+        if(numero2>numero1)
+        {
+            std::cout << "Tu número es más alto que el mío\n";
+        }
+        if(numero2<numero1)
+        {
+            std::cout << "Tu número es más bajo que el mío\n";
+        }
+        cont=cont+1;
+    }
+    while(numero2!=numero1);
+    
+    std::cout << "Acertaste, el número era " << numero1 << "\n Lo hiciste en " << cont << " intentos\n";
+    
+    
+    return 0;
+}
