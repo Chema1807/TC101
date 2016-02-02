@@ -1,0 +1,35 @@
+//
+//  main.cpp
+//  suma
+//
+//  Created by Jose Quiroga on 02/02/16.
+//  Copyright © 2016 Jose Quiroga. All rights reserved.
+//
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+    float num1, num2, suma=0;
+    
+    std::cout << "Este programa te dirá la suma de los números entre el primero y el segundo que escojas\n";
+    
+    std::cout << "Ingresa el primer número (menor)\n";
+    std::cin >> num1;
+    
+    std::cout << "Ingresa el segundo número (mayor)\n";
+    std::cin >> num2;
+    
+    
+    do{
+        suma=suma+num1;
+        
+        num1=num1+1;
+    
+    }
+    while(num1<=num2);
+    
+    
+    std::cout << "La suma de los números es de: " <<suma<< "\n";
+    
+    return 0;
+}
