@@ -1,0 +1,66 @@
+//
+//  functions.cpp
+//  On to functions
+//
+//  Created by Jose Quiroga on 09/02/16.
+//  Copyright © 2016 Jose Quiroga. All rights reserved.
+//
+
+#include <iostream>
+
+
+   
+    
+    
+    int subtraction (int num1, int num2)
+    {
+        int res;
+        res=num1-num2;
+        return res;
+    }
+    
+    int product (int num1, int num2)
+    {
+        int prod;
+        prod=num1*num2;
+        return prod;
+    }
+    
+    int remainder (int num1, int num2)
+    {
+        int resi;
+        resi=num1%num2;
+        return resi;
+    }
+    
+    int division(int num1, int num2)
+    {
+        int div;
+        div=num1/num2;
+        return div;
+    }
+    
+    int main() {
+        int res, prod, resi, div, num1, num2;
+    
+    std::cout << "Este programa te dirá el resultado de la diferencia, producto, residuo y división de dos números\n";
+   
+    
+    std::cout << "Ingresa el primer número\n";
+    std::cin >> num1;
+    
+    std::cout << "Ingresa el segundo número\n";
+    std::cin >> num2;
+        res=subtraction(num1, num2);
+        prod=product(num1, num2);
+        resi=remainder(num1, num2);
+        div=division(num1, num2);
+        
+        std::cout << "El resultado de la diferencia es: " <<res<< "\n";
+         std::cout << "El resultado del producto es: " <<prod<< "\n";
+         std::cout << "El resultado del residuo es: " <<resi<< "\n";
+         std::cout << "El resultado de la división es: " <<div<< "\n";
+        
+        
+    
+}
