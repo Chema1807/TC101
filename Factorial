@@ -1,0 +1,44 @@
+//
+//  factorial.cpp
+//  Factorial
+//
+//  Created by Jose Quiroga on 12/02/16.
+//  Copyright © 2016 Jose Quiroga. All rights reserved.
+//
+
+#include <iostream>
+
+int main(int argc, const char * argv[]) {
+    
+    
+    char resp;
+    
+    std::cout << "Este programa te ayudará a calcular el número factorial del número que ingreses\n";
+    
+   
+    
+    do{
+        int num, factorial=1;
+    
+        std::cout << "Ingresa el número deseado\n";
+        std::cin >> num;
+        
+    for(int cont=1;cont<=num;cont++)
+        
+    {
+        
+        factorial=factorial*cont;
+        
+    }
+    
+    std::cout << "El factorial del número ingresado es: " << factorial << "\n";
+        
+        std::cout << "¿Deseas encontrar otro número factorial? (Y/N)\n";
+        std::cin >> resp;
+
+        
+    }while(resp=='y');
+    
+    std::cout << "Gracias por utilizar el programa" << std::endl;
+        return 0;
+    }
